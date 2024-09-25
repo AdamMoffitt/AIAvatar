@@ -4,26 +4,15 @@ import { Metadata, Viewport } from "next";
 
 import { Providers } from "./providers";
 
-import { Fira_Code as FontMono, Inter as FontSans } from "next/font/google";
 import NavBar from "@/components/NavBar";
-
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
-
-const fontMono = FontMono({
-  subsets: ["latin"],
-  variable: "--font-geist-mono",
-});
 
 export const metadata: Metadata = {
   title: {
-    default: "HeyGen Interactive Avatar SDK Demo",
-    template: `%s - HeyGen Interactive Avatar SDK Demo`,
+    default: "IRIS | Avatar",
+    template: `%s - IRIS | Avatar`,
   },
   icons: {
-    icon: "/heygen-logo.png",
+    icon: "/iris_logo.png",
   },
 };
 
@@ -40,11 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      suppressHydrationWarning
-      lang="en"
-      className={`${fontSans.variable} ${fontMono.variable} font-sans`}
-    >
+    <html suppressHydrationWarning lang="en">
       <head />
       <body className={clsx("min-h-screen bg-background antialiased")}>
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
