@@ -16,7 +16,7 @@ export default function NavBar() {
   return (
     <Navbar className="w-full">
       <NavbarBrand>
-        <Link isExternal aria-label="HeyGen" href="https://app.heygen.com/">
+        <Link isExternal aria-label="HeyGen" href="https://irisai.app/">
           <Image src={Logo} alt="Iris Logo" objectFit="contain" width={50} />
         </Link>
       </NavbarBrand>
