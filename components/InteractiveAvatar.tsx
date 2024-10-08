@@ -225,7 +225,7 @@ export default function InteractiveAvatar() {
               </div>
             </div>
           ) : !isLoadingSession ? (
-            <div className="h-full justify-center items-center flex flex-col gap-8 w-[500px] self-center">
+            <div className="h-full justify-center items-center flex flex-col gap-8 w-[80%] lg:w-[500px] self-center">
               <div className="flex flex-col gap-2 w-full">
                 <p className="text-sm font-medium leading-none">
                   Custom Knowledge ID (optional)
